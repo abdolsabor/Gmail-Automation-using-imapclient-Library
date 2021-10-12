@@ -2,7 +2,7 @@ from imapclient import IMAPClient
 
 # context manager ensures the session is cleaned up
 with IMAPClient(host="imap.gmail.com") as client:
-    client.login('creativeasm@gmail.com', '') #Enter EMail and passowrd
+    client.login('Email here', 'password here') #Enter EMail and passowrd
     client.select_folder('[Gmail]/Spam')
 
     # search criteria are passed in a straightforward way
